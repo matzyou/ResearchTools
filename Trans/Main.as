@@ -124,7 +124,7 @@ package Trans
 			resultsAreas[resultsAreaID].y = searchArea.y + searchArea.areaHeight + 10;
 			
 			setChildIndex(resultsAreaContainer, 0);
-			setLayer();//応急処置的な
+			setLayer();
 			
 			composeArea = new ComposeArea(mainWidth, mainHeight);
 			addChild(composeArea);
@@ -443,7 +443,7 @@ package Trans
 		//▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 		
 		//--▼-左端の丸をドラッグした時の処理-▼--▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
-		//これはその文の単語を全部移動する 何故かイベントが筒抜けになってたので，仕方なくそれ用のスプライトを追加してる
+		//これはその文の単語を全部移動する
 		private var allDragSprite:Sprite, targetParentIndex:int;
 		private function allDragMD(e:MouseEvent):void {
 			targetParentIndex = e.target.parent.parent.englishSentencesSprite.indexOf(e.target.parent);
